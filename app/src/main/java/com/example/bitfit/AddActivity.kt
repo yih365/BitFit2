@@ -1,8 +1,6 @@
 package com.example.bitfit
 
-import android.content.Intent
 import android.os.Bundle
-import android.view.Display
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
@@ -10,7 +8,6 @@ import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.launch
 
-const val FOOD_EXTRA = "FOOD_EXTRA"
 class AddActivity: AppCompatActivity() {
     private lateinit var etFood: EditText
     private lateinit var etCal: EditText
@@ -39,9 +36,5 @@ class AddActivity: AppCompatActivity() {
         }
 
         finish()
-        // Route back to main page
-//        val intent = Intent(this, MainActivity::class.java)
-////        intent.putExtra(FOOD_EXTRA, DisplayFood(foodName, cal))
-//        this.startActivity(intent)
     }
 }

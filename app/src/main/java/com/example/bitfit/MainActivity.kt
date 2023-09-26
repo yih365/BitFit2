@@ -21,10 +21,6 @@ class MainActivity : AppCompatActivity() {
         rvFoods = findViewById(R.id.rvFoods)
         addBtn = findViewById(R.id.addBtn)
 
-//        foodsList = ArrayList()
-        // Set as saved
-        // Add new
-
         // Create adapter passing in the list
         val adapter = FoodsAdapter(this, entries)
         // Attach the adapter to the RecyclerView to populate items
